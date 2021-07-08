@@ -1,0 +1,20 @@
+# Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years.
+
+
+def future_value():
+    principal_amount = int(input('Enter principal amount: '))
+    interest = float(input('Enter rate: '))
+    years = int(input('Enter year: '))
+
+    future_amount1 = principal_amount * interest * years / 100 + principal_amount
+    future_amount2 = future_amount1 * interest * years / 100 + future_amount1
+    future_amount3 = future_amount2 * interest * years / 100 + future_amount2
+    future_amount4 = future_amount3 * interest * years / 100 + future_amount3
+    future_amount5 = future_amount4 * interest * years / 100 + future_amount4
+    future_amount6 = future_amount5 * interest * years / 100 + future_amount5
+    future_amount7 = future_amount6 * interest * years / 100 + future_amount6
+
+    return print('Future value of specified principal amount: ', future_amount7)
+
+
+future_value()
